@@ -38,5 +38,5 @@ Simple Web Automation on https://www.tiket.com/ using Ruby and cucumber
 
   ```
     cp env.sample .env
-    cucumber --tags @@web-automation
+    cucumber --tags @web-automation
   ```
