@@ -6,5 +6,4 @@ class LoginPage < SitePrism::Page
   element :button_continue, '.submitEmail'
   element :button_login, '.loginSubmitButton'
   elements :alternative_login_button, '.btn-signup'
-  
 end

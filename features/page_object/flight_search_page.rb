@@ -6,10 +6,9 @@ class FlightSearchPage < SitePrism::Page
   element :input_departure_field, '#productSearchFrom'
   element :input_destination_field, '#productSearchTo'
   element :airport_list, '.flight-search-airport-city-content'
-  element :button_done, :xpath, "//span[text()='SELESAI']/parent::div"
+  element :button_done, :xpath, "//span[text()='SELESAI']"
   element :button_search_schedule, '.product-form-search-btn'
-
-
+  
   def choose_trip(trip_type)
   	if trip_type == 'round trip'
   		input_roundtrip.click
@@ -24,10 +23,13 @@ class FlightSearchPage < SitePrism::Page
 
   	#search departure
   	input_departure_field.send_keys(origin_code)
+    sleep 2
   	airport_list.click
 
   	#search destination
+    sleep 2
   	input_destination_field.send_keys(destination_code)
+    sleep 2
   	airport_list.click
   end
 

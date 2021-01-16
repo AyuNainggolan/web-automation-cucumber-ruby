@@ -1,4 +1,4 @@
-# anakteknik_academy
+# Tiket Test
 Simple Web Automation on https://www.tiket.com/ using Ruby and cucumber
 ​
 ## Setup
@@ -8,6 +8,7 @@ Simple Web Automation on https://www.tiket.com/ using Ruby and cucumber
 - Ruby 2.5.1
 - Git
 - Bundler
+- Chrome
 ​
 ### Install RVM & Ruby
 1. RVM
@@ -28,7 +29,14 @@ Simple Web Automation on https://www.tiket.com/ using Ruby and cucumber
 ## Setup Gem
 ​
   ```
-    rvm use 2.5.1@anakteknik_academy --create
+    rvm use 2.5.1@tiket-test --create
     gem install bundler
     bundle install
+  ```
+
+## Run the Test
+
+  ```
+    cp env.sample .env
+    cucumber --tags @@web-automation
   ```

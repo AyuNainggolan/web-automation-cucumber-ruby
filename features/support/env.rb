@@ -56,7 +56,7 @@ Capybara.register_driver :chrome do |app|
   options.add_argument('--no-sandbox')
   options.add_argument('--disable-dev-shm-usage')
   options.add_argument('--disable-notifications')
-  options.add_argument('--window-size=1366,768')
+  options.add_argument('--window-size=1366,1000')
   # handle basic auth
   options.add_argument('--disable-blink-features=BlockCredentialedSubresources')
   options.add_argument('--disable-blink-features=AutomationControlled')
